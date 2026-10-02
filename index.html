@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>校园寻物站</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <script defer src="assets/js/domain.js"></script>
+  <script defer src="assets/js/storage.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到主要内容</a>
+  <header class="site-header">
+    <a class="brand" href="#/home"><img src="assets/images/logo.svg" width="42" height="42" alt=""><span>校园寻物站</span></a>
+    <nav aria-label="主导航">
+      <a href="#/home" data-nav="home">首页</a>
+      <a href="#/mine" data-nav="mine">我的发布</a>
+      <a href="#/publish" class="button primary compact" data-nav="publish" aria-label="发布信息">＋ 发布信息</a>
+    </nav>
+  </header>
+  <div id="storage-notice" class="storage-notice" role="alert" hidden></div>
+  <main id="content" tabindex="-1"></main>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="finish-dialog" aria-labelledby="dialog-title">
+    <h2 id="dialog-title">确认更新状态</h2><p id="dialog-message"></p>
+    <div class="actions"><button type="button" class="button secondary" data-action="cancel-finish">再等等</button><button type="button" class="button primary" data-action="confirm-finish">确认更新</button></div>
+  </dialog>
+  <noscript><p class="storage-notice">请在 Chrome 中启用 JavaScript 后使用校园寻物站。</p></noscript>
+</body>
+</html>
