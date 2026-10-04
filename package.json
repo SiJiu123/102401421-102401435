@@ -1,0 +1,12 @@
+{
+  "name": "campus-lost-found",
+  "version": "1.0.0",
+  "private": true,
+  "description": "校园寻物站的自动测试入口",
+  "scripts": {
+    "test": "node --test tests/domain.test.cjs tests/storage.test.cjs"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

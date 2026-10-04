@@ -31,6 +31,7 @@
 ```text
 index.html                    网页入口
 README.md                     使用说明
+package.json                  统一测试入口
 assets/
   css/app.css                 页面样式与手机布局
   js/domain.js                输入校验、搜索、筛选和状态规则
@@ -47,7 +48,7 @@ tests/
 测试使用 Node.js 自带的 `node:test` 和 `node:assert/strict`。安装 Node.js 24 后，在仓库根目录运行：
 
 ```powershell
-node --test tests/domain.test.cjs tests/storage.test.cjs
+npm test
 ```
 
 共 28 个测试用例，覆盖输入校验、搜索筛选、状态更新及存储异常。运行网页不需要安装 Node.js。
