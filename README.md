@@ -32,6 +32,7 @@
 index.html                    网页入口
 README.md                     使用说明
 package.json                  统一测试入口
+.github/workflows/test.yml    GitHub 自动测试
 assets/
   css/app.css                 页面样式与手机布局
   js/domain.js                输入校验、搜索、筛选和状态规则
@@ -52,3 +53,5 @@ npm test
 ```
 
 共 28 个测试用例，覆盖输入校验、搜索筛选、状态更新及存储异常。运行网页不需要安装 Node.js。
+
+向 `main` 分支推送修改或提交 Pull Request 时，GitHub 会自动运行这套测试，结果可在仓库的 Actions 页面查看。
